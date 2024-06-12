@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+.btn {
+  @apply bg-primary leading-[40px] text-white rounded-full inline-block text-sm px-6 h-[40px] transition ease-in-out;
+}
+.btn-lg {
+  @apply leading-[64px] px-14 text-lg h-[64px];
+}
+.btn:hover {
+  @apply bg-green-700;
+}
+.main-title {
+  @apply block  mb-3 text-[32px]/[120%] lg:text-[64px]/[110%] -tracking-[1.5px] lg:-tracking-[4px] lg:mb-5;
+}
+.out-of-stock {
+  background: rgba(26, 30, 38, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+@media (min-width: 768px) {
+  .lg\:btn-lg {
+    @apply h-[64px] leading-[64px] px-28 text-lg;
+  }
+}
